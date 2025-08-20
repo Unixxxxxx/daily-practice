@@ -9,7 +9,9 @@ def index():
 @app.route('/home')
 def home():
     return render_template('home.html', name= 'home')
-
+@app.route('/template')
+def templateas():
+    return render_templates('templates.html', name='templates')
 
 if __name__=='__main__':
     app.run(debug=True)
