@@ -1,1 +1,90 @@
-<h1> Hello form Templates </h1> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Templates Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-white to-blue-50 min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MyWebsite</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+        <a href="templates.html" class="text-blue-600 font-semibold">Templates</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">
+      Explore Our <span class="text-blue-600">Templates</span>
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      Choose from a collection of modern, responsive, and customizable templates to kickstart your project.
+    </p>
+  </section>
+
+  <!-- Templates Grid -->
+  <section class="flex-1 bg-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?business,website" alt="Business Template" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Business Template</h3>
+          <p class="mt-2 text-gray-600">Perfect for startups, companies, and agencies to showcase services.</p>
+          <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+            View Template
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?portfolio,design" alt="Portfolio Template" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Portfolio Template</h3>
+          <p class="mt-2 text-gray-600">Showcase your projects, skills, and achievements with a stylish portfolio.</p>
+          <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+            View Template
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="https://source.unsplash.com/400x250/?blog,writing" alt="Blog Template" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Blog Template</h3>
+          <p class="mt-2 text-gray-600">Clean and modern layout for bloggers, writers, and content creators.</p>
+          <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+            View Template
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 mt-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
