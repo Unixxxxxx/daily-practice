@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask-WTF Form</title>
+</head>
+<body>
+    <h2>Form with Flask-WTF</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }} <br><br>
+        {{ form.email.label }} {{ form.email() }} <br><br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
+
