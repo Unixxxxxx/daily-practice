@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_mysqldb import MySQL
 
 app = Flask(__name__)
@@ -22,9 +22,13 @@ def home():
         mysql.connection.commit()
         cur.close()
 
-        return "✅ Data Saved Successfully!"
+        return redirect(url_for('thankyou'))
 
     return render_template("form.html")
+
+@app.route("/thankyou")
+def thankyou():
+    return render_template("thankyou.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
