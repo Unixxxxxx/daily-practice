@@ -39,7 +39,7 @@ def update_user(user_id):
         return jsonify(user)
     return jsonify({"error": "User not found"}), 404
 
-# DELETE user
+# DELETE users
 @app.route("/users/<int:user_id>", methods=["DELETE"])
 def delete_user(user_id):
     global users
