@@ -1,5 +1,6 @@
-In python there are 35 reserved words 
-False
+#In python there are 35 reserved words 
+#False
+
 None
 True
 and
